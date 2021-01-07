@@ -1,0 +1,74 @@
+/*
+few styles specifically for projects
+*/
+*{
+    
+}
+.projh1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 5vw;
+    font-family: 'Oswald', sans-serif;
+    margin:2% auto;
+}
+main{
+    position: relative;
+    top: 20%;
+}
+.projectcontent{
+    display: flex;
+    margin:5% auto;
+    border: 0.1px dotted #6b060e9c;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    z-index: 10;
+}
+.part1{
+    width:40%;
+    margin: 0 3% 0 4%;
+    float: right;
+    font-size: 20px;
+    
+}
+.part2{
+    width: 40%;
+    margin: 0;
+    float: left;
+    font-size: 20px;
+}
+.ppp{
+    justify-content: center;
+    align-items: center;
+}
+.imglink{
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    min-height: fit-content;
+    background-color: rgba(110, 19, 19, 0.5);
+}
+.h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    font-weight: bolder;
+}
+@media(max-width:700px){
+    main{
+        position: relative;
+    }
+    .projectcontent{
+        margin: 3%;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .part1{
+        width: 80%;
+        margin: 10px;
+    }
+    .part2{
+        width: 80%;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,78 @@
+/*
+- about page
+- chysomm62
+- December, 12 2020
+*/
+body{
+    min-height: 100%;
+}
+.main{
+    padding: 5px 40px;
+    align-items: center;
+    justify-content: center;
+}
+.imgcont{
+    border-radius: 50%;
+    margin: 5% auto;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    
+}
+.dp{
+    border-radius: 50%;
+    opacity: 0;
+    animation: 3s ease 0.5s 1 normal forwards running aboutimg;
+}
+.aboutp{
+    font-size: 2.3vw;
+}
+@media screen and (max-width: 790px){
+    .aboutp{
+        font-size: 2.5vw;
+    }
+}
+.abouth1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 5vw;
+    font-family: 'Oswald', sans-serif;
+    margin:5% auto;
+    animation: 1s ease 0.5s 1 normal forwards running abouth1;
+    opacity: 0;
+}
+.h1a{
+    font-size: 4vw;
+}
+.worder{
+    margin: 20px 12%;
+}
+
+/*animations*/
+@keyframes aboutimg{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes abouth1{
+    0%{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

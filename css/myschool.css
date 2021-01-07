@@ -1,0 +1,337 @@
+/* mobile first */
+
+html{
+    background-color: #eee;
+}
+body{
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100%;
+    display: block;
+}
+p{
+    color: #4a525f;
+    margin: 0;
+}
+#logo p {
+    display: block;
+    position: absolute;
+    top: 1%;
+    color: white;
+    font-size: 2.2em;
+    font-style: italic;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+/* TOP MENU */
+ul {
+    width: 100%;
+    padding: 0;
+    list-style: none !important;
+}
+li {
+    text-align: center;
+    padding: 5px;
+    background-color: #4a525f;
+    font-style: italic;
+    border-bottom: 2px solid white;
+}
+li, li a {
+    text-decoration: none;
+    color: white;
+}
+li:hover, li a:hover{
+    background-color: #393535;
+}
+
+/* TOP MENU END */
+header {
+    position: relative;
+
+}
+header p {
+    position: absolute;
+    bottom: 60%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+}
+
+#apply-btn {
+    bottom: 50%;
+}
+#apply-btn a {
+    padding: 2px;
+    text-decoration: none;
+    background-color: #8393ca;
+    color: white;
+    border-radius: 5px;
+}
+
+#apply-btn a:hover {
+    background-color: #3e486a;
+}
+
+.row1-1{
+    width: 100%;
+    float: left;
+    margin-bottom: 2%;
+}
+.buttons {
+    width: 30%;
+    float: left;
+    padding-left: 2.5%;
+    text-align: center;
+}
+.buttons a {
+    text-decoration: none;
+}
+.row1-2 {
+    width: 100%;
+    background-color: #e0e0eb;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 4% 0;
+    display: inline-block;
+}
+.row2 {
+    background-color: #a864a8;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.row2 img {
+    width: 40%;
+    display: inline-block;
+    min-width: 35%;
+}
+
+.row2 p {
+    font-size: 1.4em;
+    padding: 3% 0;
+    color: white;
+}
+.row3-1 {
+    display: inline-block;
+    width: 100%;
+    background-color: #e0e0eb;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 4% 0;
+}
+span a {
+    text-decoration: underline;
+    color: #ec008c;
+}
+footer p {
+    text-align: center;
+    padding-bottom: 2%;
+    background-color: white;
+}
+.rounded{
+    border-radius: 50%;
+}
+.online {
+    color: #b81978;
+}
+
+/* width of device > 600px */
+@media screen and (min-width: 600px) {
+/* top menu */
+
+header ul {
+    position: absolute;
+    top: 8%;
+    text-align: center;
+    background-color: white;
+}
+header li, header li a {
+    display: inline-block;
+    background-color: transparent;
+    border-bottom: none;
+    color: #4a525f;
+    padding: 5px;
+}
+header li {
+    border-right: 1px solid #4a525f;
+}
+header li:last-child {
+    border-right: none;
+}
+header li:hover, header li a:hover {
+    background-color: #d8cccc;
+}
+
+/* top menu end */
+header p {
+    bottom: 40%;
+    font-size: 2em;
+}
+#apply-btn {
+    bottom: 30%;
+}
+
+.row1-1 {
+    width: 50%;
+    margin-top: 2%;
+}
+.row1-2 {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.row1-2 p {
+    max-width: 60%;
+}
+.row2 p {
+    font-size: 2em;
+}
+.sarah, .tom{
+    width: 50%;
+    float: left;
+    padding-bottom: 2%;
+}
+.row3-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.row3-1 p {
+    max-width: 60%;
+    flex: 1;
+}
+.row3-2 {
+    flex: 1;
+    padding: 2%;
+}
+
+/* footer menu */
+footer ul {
+    text-align: center;
+    background-color: #8393ca;
+    margin: 0;
+}
+footer li, footer li a {
+    display: inline-block;
+    background-color: transparent;border-bottom: none;
+    padding: 5px;
+}
+footer li{
+    border-right : 1px solid #4a525f;
+}
+footer li:last-child{
+    border-right: none;
+}
+
+footer li:hover, footer li a:hover {
+    background-color: #3e486a;
+}
+
+footer p {
+    padding-top: 2%;
+    background-color: #e0e0eb;
+    font-size: 1.2em;
+}
+}
+
+/* width of device > 900px */
+@media screen and (min-width:900px) {
+
+    body {
+        max-width: 1100px;
+    }
+    header ul {
+        max-width: 1100px;
+        background-color: transparent;
+        text-align: right;
+        top: 1%;
+        right: 2%;
+    }
+    .online {
+        color: white;
+    }
+    header li, header li a {
+        display: inline-block;
+        background-color: transparent;
+        border-bottom: none;
+        color: white;
+        padding: 5px;
+    }
+    header li {
+        border-right: 1px solid white;
+    }
+    header p {
+        font-size: 2.2em;
+        font-weight: bold;
+        max-width: 1100px;
+    }
+    #logo p {
+        text-align: left;
+        padding-left: 1%;
+    }
+    .row1-1 {
+        font-size: 1.2rem;
+    }
+    .row1-2, .row2 p, .row3-1 {
+        font-size: 2.5em;
+    }
+    footer p {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (min-width:1100px){
+   
+    .online {
+        color: black;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

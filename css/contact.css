@@ -1,0 +1,173 @@
+/*
+- chysomm62
+- December, 12 2020
+- general style for contact.html
+- the style.css styles would still work on some parts of the document like the nav, footer, etc.
+*/
+
+.h1{
+    font-size: 6vw;
+    font-family: 'lato', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+.contactinfo{
+    display: flex;
+    color: white;
+    width: 80%;
+    padding: 20px;
+    background-color: rgb(100, 26, 29);
+    border-radius: 15px;
+    margin: 3% auto;
+    padding: 0;
+    font-size: large;
+}
+
+.box1{
+    background-color: rgb(202, 60, 17);
+    height: auto;
+    border-radius: 15px;
+    margin: 4% 4% 4% -4%;
+    width: 50%;
+    padding: 7%;
+    height: auto;
+    z-index: 10;
+    animation: 1.2s ease 0.5s 1 normal forwards running cont1;
+}
+.box1 ul{
+    list-style-type: none;
+}
+.box2{
+    padding: 4%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    animation: 1.2s ease 0.5s 1 normal forwards running cont2;
+}
+.input{
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: inherit;
+    color: white;
+    margin: 2% 0;
+    padding: 1% 3%;
+    font-size: large;
+}
+.input::placeholder{
+    color: white;
+    font-size: large;
+}
+form{
+    margin: 0;
+    padding: 2%;
+}
+.button{
+    align-self: center;
+    margin: 2% auto;
+    outline: none;
+    background-color: white;
+    color: rgb(53, 7, 7);
+    padding: 2% 6%;
+    width:100%;
+    border-radius: 10px;
+    border: none;
+}
+.contactss{
+    font-size: 20px;
+}
+.faaar{
+    margin-right: 30px;
+    width: 20px;
+}
+.mist{
+    padding: 7px 1px;
+}
+.mist:hover{
+    transform: translateY(-3px);
+}
+.hr{
+    border: 0.5px solid #2404047a;
+    width: 100%;
+}
+.blockk{
+    display: flex;
+}
+#flexer{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.roundedd{
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: white;
+    width: auto;
+    margin: 2% auto;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    padding: 4%;
+}
+.svg{
+    fill: yellow;
+}
+.roundedd:hover{
+    transform: translateY(-5px);
+}
+
+/*media query for small and medium sized devices */
+
+@media screen and (max-width:767px){
+    .contactinfo{
+        display: block;
+        color: white;
+        width: 80%;
+        max-width: 100%;
+        padding: 5%;
+        background-color: rgb(100, 26, 29);
+        border-radius: 15px;
+        margin: 3% auto;
+        padding: 0;
+        font-size: large;
+        position: relative;
+    }   
+    .box1{
+        background-color: rgb(202, 60, 17);
+        height: auto;
+        border-radius: 15px;
+        margin: 0;
+        width: 100%;
+        padding: 7%;
+        height: auto;
+        z-index: 10;
+        box-sizing: border-box;
+    } 
+    .box2{
+        padding: 4%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}
+
+@keyframes cont1{
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes cont2{
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

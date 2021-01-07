@@ -1,0 +1,131 @@
+<!--------
+created by chysomm---------
+what do you want to do?""""""""
+TO""""""""DO"""""""LIST""""""""
+
+
+i am a learner, this is the first time trying to create something like this..        it might not be perfect if you are a pro but i promise to create something really awesome in the nearest future..        
+
+this is a one page app.        every html needed for this app must be contained in this html document
+
+about this app:
+this is a to do list app.        users can add whatever the want to do in the app, tick them when done or delete them when not needed...
+
+storage: all information would be stored on user's computers using local storage..        no server side or back-end     programming  would be done on this app..         it is fully a front-end app
+
+
+-->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport"             content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>To Do List</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    
+    <link href = "../css/to-do.css" type = "text/css" rel = "stylesheet">
+    <style>
+     
+    </style>
+</head>
+<body>
+
+    <!--page loader to enable the page load well before executing -->
+    <div id="pageloader" class="center" onload="loader()"></div>
+    <article><!--
+    <header>
+        <section class="logo">Chysomm</section>
+        <nav>
+            <ol>
+                <li><a href = "#">HOME</a></li>
+                <li><a href ="#">Account Settings</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#coverpage">LOG OUT</a></li>
+            </ol>
+        </nav>
+        <div class = "menu-toggle"><i class = "fa fa-bars" aria-hidden = "true"></i></div>
+        
+    </header>
+    <br><br>-->
+    <!-- first page of the app -->
+    <div id="coverpage">
+    <h1>TO DO LIST</h1> 
+        
+        <p>
+                This is a simple webApp designed using HTML, CSS and JS to help you get that list together. You can Sign Up to get started or Log In if you already have an account. <br><small>Check the buttons below.</small>
+        </p>
+            
+        <!-- button leading to the signup form -->    
+        <button id="signup" class = "button">Sign Up</button>
+            <br>
+            <br>
+        <p><small>Already have an account?</small></p>
+        
+        <!--button that leads to the login form, someone can login to this app if they've registered before on the same device -->
+        <button id = "signin" class = "button">Log In</button>
+            <br>
+    </div>
+    
+    <!-- form1 is the first form of the page where users inputs their details and register on the app -->
+    <div id="form1">
+    <form>
+            <fieldset>
+            <legend>  <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </legend>
+            <h4>REGISTRATION FORM</h4>
+            <input type="text" placeholder="first name" required class="input" id="firstname" name = "firstname" autofocus/><br>
+            
+            <input type="text" placeholder="last name" class="input" id="lastname" name = "lastname" required autofocus/><br>
+            
+            <input type="email" placeholder="email" required class="input" id="email" name = "email" autofocus/><br>
+            
+            <input type="password" placeholder="password" required class="input" id="password" name = "password" autofocus/><br>
+            <input type="checkbox" id = "checkbox" required>I agree to the terms of use.
+            <br>
+            <button class="submit" id="signupform"> Sign Up </button>
+                
+            </fieldset>
+        </form>
+    </div>
+    
+    <!-- form2 is the second and last form of the app and its for logging in to the app  -->
+    <div id = "form2">
+    <form method"POST" action"#">
+            <fieldset>
+            <legend>
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </legend>
+            <h4>LOG IN</h4>
+            <input type="email" placeholder="registered email" required class="input" name = "email" autofocus/><br>
+            <input type="password" placeholder="password" required class="input" name = "password" autofocus/><br>
+            <button class="submit" id="loginbutton"> Log In </button>
+            </fieldset>
+        </form>
+        <!-- hyperlink that leads to the signup form on the same page -->
+        <p><small>Don't have an account? <a href="#form1">Click here</a> to sign up</small></p>
+    </div>
+    
+    <!--dashboard of the app which shows after user logs in -->
+    <article id="dashboard">  
+     <!-- where the to do list resides -->
+    <div class= "todoContainer">
+        <div class = "todo_Header">
+            <h1>MY TO DO APP</h1>
+            <input type="text" id="the_input" placeholder = "what you want to do.......">
+            <button class = "create_button" id = "create_button">Create To Do </button>
+        </div>
+        <div id ="ulDiv">
+        <ul id= "ul_forToDo">
+            
+        </ul></div>
+    </div>
+    </article>
+    </article>
+    
+    <script src = "../javascript/to-do.js">
+    </script>        
+</body>
+<!-- created by chysomm for learning and improvement -->
+</html>

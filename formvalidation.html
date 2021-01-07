@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+         <!--meta tags for SEO-->
+         <meta charset="utf-8">
+         <meta name="description" content="FRONT-END DEVELOPER">
+         <meta name="author" content="CHISOMMUORAH">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <title>form validation</title>
+         <link href="../css/formvalidation.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <form method="POST" name="form" onsubmit="return validated()">
+                <fieldset>
+                    <h1 class="head">Registration Page</h1>
+                    <div class="label">Name:</div>
+                    <input type="name" name="firstName" placeholder="firstName">
+                    <div class="error_message" id="first_error">Please input your first Name</div>
+                    <input type="name" name="lastName" placeholder="lastName">
+                    <div class="error_message" id="last_error">Please input your last Name</div>
+                    <br>
+                    <div class="label">Age:</div>
+                    <input type="number" max="40" min="16" placeholder="age" name="age"><br>
+                    <div class="error_message" id="age_error">Please Select your Age</div>
+                    <div class="label">Email:</div>
+                    <input type="email" name="email" placeholder="abc@each.com">
+                    <div class="error_message" id="email_error">Please fill in your Email</div>
+                    <br>
+                    <div class="label">Password:</div>
+                    <input type="password" name="password" placeholder="password">
+                    <div class="error_message" id="pass_error">Password must be more than five charaters</div>
+                    <br>
+                    <button type="submit">Register</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <script src="../javascript/formvalidation.js"></script>
+    </body>
+</html>

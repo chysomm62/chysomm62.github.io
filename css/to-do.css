@@ -1,0 +1,393 @@
+/*general styles for elements that dont have special styles on this document*/
+body {
+    text-align:center;
+    font-size:20px;
+    display:block;
+    align-items:center;
+    font-family:times new roman;
+    opacity:0.8;
+    background-color:#fefeff;
+       position:relative;
+       max-width:100%;
+       margin:0;
+       justify-content:center;
+       min-width:300px;
+}
+*{
+    box-sizing:border-box;
+}
+
+/*button here is basically for the buttons that lead the user to either the login or signup forms.. i would style the submit buttons for the forms seperately*/
+.button{
+    font-size:30px;
+    border: 1px solid black;
+    border-radius:8px;
+    margin-top:0;
+    padding:6px 20px;
+    color:white;
+    background-color:#343434;
+    margin-bottom:20px;
+    width:180px;
+    border:5px outset yellow;
+}
+#signin:hover{
+    background-color:#25fe95;
+}
+#signup:hover{
+    background-color:#ff5006;
+}
+small{
+    font-size:13px;
+}
+h4{
+    padding:0;
+    margin:5px 5px 0 5px;
+}
+
+/*submit buttons for the two forms*/
+.submit{
+    margin:20px auto auto auto;
+    padding:5px 10px;
+    width:300px;
+    background-color:#ee2233;
+    border:3px outset red;
+}
+
+/*styles for the input fields*/
+.input{
+    width:300px;
+    height:50px;
+    font-size:25px;
+    background-color:inherit;
+    color:#155142;
+    margin:10px 4px 0px;
+    border:none;
+    padding:10px;
+    border-radius:4px;
+    border-bottom:3px solid #44bb77;
+    outline:none;
+}
+input:click{
+    border: 1px solid rgb(d,f,c,.2);
+}
+.input:hover{
+    border-bottom: 2px solid red
+}
+#checkbox{
+    margin:15px auto;
+}
+.submit:hover{
+    background-color:#333333;
+}
+#signupform:hover{
+    background-color:#333433;
+}
+
+/*styles for fieldset which contains other elements of the forms*/
+fieldset{
+    border:none;
+    padding: auto auto;
+    margin:10px auto auto auto;
+    background-color:#ececec;
+    max-width:100%;
+}
+
+/*title for the fieldset or basically the forms*/
+legend{
+    font-weight:bolder;
+    font-size:70px;
+}
+
+/*for the signout button incase some user doesnt want to be logged in anymore*/
+
+article{
+    margin-bottom:10px;
+}
+
+/*i removed the underline of the hyperlink and added a light blue colour to easily identify the texts as links*/
+a{
+    color:#46a;
+    text-decoration:none;
+}
+
+/*i dont want my horizontal lines not covering the whole width of the browser*/
+hr{
+    width:100%;
+    margin:0;
+}
+
+/*i intend to let users change whatever they can in the settings of this app*/
+#settings{
+    margin:auto auto auto 0;
+    font-size:15px;
+    color:#4e8;
+    float:left;
+}
+
+/*i dont want my app messing around, so i have the page loader to help keep the app in check till everything is fully loaded and ready to execute*/
+
+
+/*animation for the page loader*/
+@keyframes spin{
+    100%{
+        transform: rotate (360deg);
+    }
+}
+#pageloader{
+    border:12px solid #f3f3f3;
+    border-radius:50%;
+    border-top:12px solid #444444;
+    width:70px;
+    height:70px;
+    animation: spin 3s linear infinite;
+    display:none;
+}
+ /*to style the page loader*/
+.center { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+} 
+
+header{
+    width:100%;
+    background-color:#232425;
+    box-sizing:border-box;
+    position:absolute;
+    top:0;
+}
+header .logo{
+    color:#fee;
+    height:50px;
+    font-size:22px;
+    float:left;
+    font-weight:bold;
+    font-family:cursive;
+}
+header nav{
+    float:right;
+}
+header nav ol{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+header nav ol li{
+    list-style-type:none;
+}
+header nav ol li a{
+    line-height:40px;
+    height:40px;
+    padding: 0 20px;
+    color:#fcc;
+    text-decoration:none;
+    font-size:20px;
+}
+header nav ol li a:hover{
+    color:#99cc99;
+    background:#2196f3;
+}
+.menu-toggle{
+    float:right;
+    color:#eee;
+    line-height:50px;
+    font-size:26px;
+    cursor:pointer;
+    display:none;
+}
+
+
+/*this is a one page app. there are no hyperlinks leading to other pages so in need to hide some elements and call them with javascript when they are needed*/
+#form1{
+    display:none;
+}
+#form2{
+    display:none;
+}
+
+/*the user's house on this app.. whatever the user wants to add or change would be here*/
+#dashboard{
+    display:none;
+    margin:auto;
+}
+
+/*styling the todolist*/
+.todoContainer{
+    margin:10px auto 50px auto;
+}
+/*header of the todo list*/
+.todo_Header{
+    background-color:#ff3c2f;
+    padding:20px 20px;
+    color: white;
+}
+
+/*after an item has being added to the list, it has no business on the header anymore so i want the item gone */
+.todo_Header:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+ /* unordered list for the items that would be added by the users */
+ul{
+    margin:0;
+    padding:o;
+}
+/*style for the list items that would be added by the app users*/
+ul li{
+    position:relative;
+    background-color:#cecece;
+    list-style-type:none;
+    cursor:pointer;
+    padding: 10px 6px 10px 30px;
+    transition:0.3s;
+    text-align:left;
+    margin: 0 0 0 0;
+    margin-left:0;
+    
+    /*making list unselectable*/
+    
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -user-select:none;
+    
+}
+
+/* changing the background of all odd items */
+ul li:nth-child(odd){
+    background-color:#f6f9f3;
+}
+
+/*the checked class is for completed events. the event ticks good and is cancelled.. it can be unchecked too.. if you want to permanently delete something from the list, then click on the close which is the X on red background*/
+ul li.checked{
+    background-color:#29a78b;
+    color:#fefafe;
+    text-decoration:line-through;
+    
+}
+
+/*before item is checked */
+ul li.checked::before{
+    content:'';
+    position:absolute;
+    border:1px solid white;
+    border-width: 0 2px 2px 0;
+    top:10px;
+    left:5px;
+    transform:rotate(45deg);
+    height:25px;
+    width:20px;
+    margin: 0 10px auto auto;
+}
+
+
+ul li:hover{
+    background-color:#d7d744;
+}
+
+/*would introduce this class using javascript
+it is used to permanently delete an item from the list */
+.close{
+    position:absolute;
+    right:0;
+    top:0;
+    padding: 10px 15px;
+    background-color:#fa3414;
+}
+
+.close:hover{
+    background-color:#f43c2f;
+}
+
+/*what ever the input is would be saved as a todo */
+#the_input{
+    width:60%;
+    padding:10px;
+    float:left;
+    font-size:15px;
+    border:none;
+    margin:0;
+}
+
+/* this button adds items to the list upon click */
+.create_button{
+    padding: 10px;
+    width:40%;
+    color:#fbfbfb;
+    float:left;
+    cursor:pointer;
+    transition:0.4s;
+    font-size:15px;
+    background-color:#5555ac;
+}
+
+.create_button:hover{
+    background-color:#ccc;
+    color:#010201;
+}
+
+
+/*for responsiveness! but i wont do much here for now because am creating this app for laptops*/
+@media screen and (min-width:751px){
+    body{
+        font-size:140%;
+        justify-content:center;
+        width: 99%;
+        margin:5px;
+        padding:0;
+    }
+    fieldset{
+        max-width : 100%;
+        height:auto;
+        justify-content:center;
+        margin:30px 190px;
+        font-size:120%;
+        align-items: center;
+        padding:0;
+    }
+    hr{
+        width:100%
+    }
+    p{
+        margin:10px 170px;
+        font-size:150%;
+    }
+    
+}
+.show{
+    display:block;
+}
+.hide{
+    display: none;
+}
+@media(max-width:991px){
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display:block;
+    }
+    header nav{
+        display:none;
+        position:absolute;
+        width:100%;
+        height:calc(100vh - 50px);
+        top:50px;
+        left:0;
+        transition:0.5s;
+        background:#342;
+    }
+    header nav ol{
+        display:block;
+        text-align:center;
+    }
+    header nav ol li a{
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    
+}
+
