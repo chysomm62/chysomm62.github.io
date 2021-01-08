@@ -161,7 +161,7 @@ form{
 
 @keyframes cont1{
     0%{
-        transform: translateX(-200px);
+        transform: translateX(-2000px);
     }
     100%{
         transform: translateX(0px);
@@ -170,7 +170,7 @@ form{
 }
 @keyframes cont2{
     0%{
-        transform: translateX(200px);
+        transform: translateX(2000px);
     }
     100%{
         transform: translateX(0px);
