@@ -24,6 +24,7 @@ body{
     animation: 3s ease 0.5s 1 normal forwards running aboutimg;
 }
 .aboutp{
+    opacity: 0;
     font-size: 2.3vw;
     animation: 1.2s ease 0.5s 1 normal forwards running abt2;
 }
@@ -37,7 +38,9 @@ body{
     opacity: 0;
 }
 .h1a{
+    opacity: 0;
     font-size: 4vw;
+    animation: 1s ease 0.5s 1 normal forwards running abt3;
 }
 .worder{
     margin: 4% 14%;
@@ -81,6 +84,16 @@ body{
     }
 }
 @keyframes abt2{
+    0%{
+        transform: translateX(2000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes abt3{
     0%{
         transform: translateX(2000px);
         opacity: 0;
