@@ -14,31 +14,33 @@ main{
     position: relative;
     top: 20%;
 }
-.projectcontent{
+.projectcontainer{
     display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+.projectcontent{
+    width: 30%;
     margin:5% auto;
     border: 0.1px dotted #6b060e9c;
     padding: 10px;
     border-radius: 10px;
-    justify-content: center;
     z-index: 10;
     background-color: rgba(206, 72, 20, 0.5);
 }
 .part1{
     opacity: 0;
-    width:40%;
-    margin: 0 3% 0 4%;
-    float: right;
+    margin: 0 auto;
     font-size: 20px;
     animation: 1.2s ease 0.5s 1 normal forwards running mons;
 }
 .part2{
     opacity: 0;
-    width: 40%;
-    margin: 0;
-    float: left;
-    font-size: 20px;
+    margin: 0 auto;
     animation: 1.2s ease 0.5s 1 normal forwards running chym;
+    margin-top: 2%;
+    padding: 3%;
 }
 .ppp{
     justify-content: center;
@@ -57,25 +59,34 @@ main{
     font-weight: bolder;
 }
 .propp{
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 @media(max-width:700px){
     main{
         position: relative;
     }
+    .projectcontainer{
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
     .projectcontent{
-        margin: 3%;
-        justify-content: space-around;
-        flex-direction: column;
+        width: 80%;
+        margin: 3% auto;
         align-items: center;
     }
     .part1{
-        width: 80%;
-        margin: 10px;
+        width: 100%;
+        margin: 10px auto;
+        box-sizing: border-box;
     }
     .part2{
-        width: 80%;
-        margin: 10px;
+        width: 100%;
+        margin: 10px auto;
+        box-sizing: border-box;
     }
     .h2{
         font-family: 'Oswald', sans-serif;
