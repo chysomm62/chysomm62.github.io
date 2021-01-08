@@ -37,7 +37,7 @@ a{
     transform: translateY(5px);
 }
 .navbar{
-    margin: 0 !important;
+    margin:0;
     font-size: 20px;
     font-family: 'Jaldi', sans-serif;
 }
