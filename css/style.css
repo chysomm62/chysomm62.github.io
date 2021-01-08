@@ -142,6 +142,9 @@ p{
 
 /*small and medium sized devices*/
 @media(max-width:767px){
+    .navbar{
+        padding-bottom: 0;
+    }
     .navbar-collapse{
         position: absolute;
         top: 54px;

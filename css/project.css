@@ -21,6 +21,7 @@ main{
     flex-wrap: wrap;
 }
 .projectcontent{
+    opacity: 0;
     width: 30%;
     margin:5% auto;
     border: 0.1px dotted #6b060e9c;
@@ -28,11 +29,11 @@ main{
     border-radius: 10px;
     z-index: 10;
     background-color: rgba(206, 72, 20, 0.5);
+    animation: 1s ease 0.5s 1 normal forwards running procon;
 }
 .part1{
     opacity: 0;
     margin: 0 auto;
-    font-size: 20px;
     animation: 1.2s ease 0.5s 1 normal forwards running mons;
 }
 .part2{
@@ -79,7 +80,7 @@ main{
         align-items: center;
     }
     .part1{
-        width: 100%;
+        width: 90%;
         margin: 10px auto;
         box-sizing: border-box;
     }
@@ -98,6 +99,13 @@ main{
     }
 }
 
-
+@keyframes procon {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
