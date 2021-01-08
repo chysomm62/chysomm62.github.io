@@ -22,6 +22,8 @@
     margin: 3% auto;
     padding: 0;
     font-size: large;
+    animation: 1.2s ease 0.5s 1 normal forwards running cont2;
+    opacity: 0;
 }
 
 .box1{
