@@ -6,11 +6,13 @@
 */
 
 .h1{
+    opacity: 0;
     font-size: 6vw;
     font-family: 'lato', sans-serif;
     font-weight: 600;
     text-align: center;
     padding: 20px;
+    animation: 3.2s ease 0.5s 1 normal forwards running cont3;
 }
 .contactinfo{
     display: flex;
@@ -21,7 +23,7 @@
     border-radius: 25px;
     margin: 3% auto;
     font-size: large;
-    animation: 1.2s ease 0.5s 1 normal forwards running cont3;
+    animation: 3.2s ease 0.5s 1 normal forwards running cont3;
     opacity: 0;
 }
 
@@ -88,6 +90,7 @@ form{
 }
 .mist{
     padding: 7px 1px;
+    font-size: 2vw;
 }
 .mist:hover{
     transform: translateY(-3px);
@@ -155,6 +158,9 @@ form{
         justify-content: center;
         align-items: center;
         height: auto;
+    }
+    .mist{
+        font-size: 3.5vw;
     }
 }
 

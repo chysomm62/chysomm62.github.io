@@ -5,11 +5,13 @@ few styles specifically for projects
     
 }
 .projh1{
+    opacity: 0;
     text-align: center;
     font-weight: bolder;
     font-size: 5vw;
     font-family: 'Oswald', sans-serif;
     margin:2% auto;
+    animation: 1.2s ease 0.5s 1 normal forwards running chym;
 }
 main{
     position: relative;
@@ -25,17 +27,20 @@ main{
     z-index: 10;
 }
 .part1{
+    opacity: 0;
     width:40%;
     margin: 0 3% 0 4%;
     float: right;
     font-size: 20px;
-    
+    animation: 1.2s ease 0.5s 1 normal forwards running mons;
 }
 .part2{
+    opacity: 0;
     width: 40%;
     margin: 0;
     float: left;
     font-size: 20px;
+    animation: 1.2s ease 0.5s 1 normal forwards running chym;
 }
 .ppp{
     justify-content: center;
@@ -52,6 +57,9 @@ main{
     font-family: 'Oswald', sans-serif;
     font-size: 3vw;
     font-weight: bolder;
+}
+.propp{
+    font-size: 2.5vw;
 }
 @media(max-width:700px){
     main{
@@ -71,4 +79,16 @@ main{
         width: 80%;
         margin: 10px;
     }
+    .h2{
+        font-family: 'Oswald', sans-serif;
+        font-size: 4vw;
+        font-weight: bolder;
+    }
+    .propp{
+        font-size: 3.5vw;
+    }
 }
+
+
+
+

@@ -48,10 +48,11 @@ body{
 /* RESPONSIVENESS WITH MEDIA QUERIES */
 @media screen and (max-width: 790px){
     .aboutp{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     .worder{
         margin: 4% 4%;
+        font-size: 4.5vw;
     }
 }
 
