@@ -1,10 +1,22 @@
-/*portfolio*/
+/* portfolio
+- general style 
+- added this to other pages not excluding the index.html page
+*/
+
+/*default style for elements that werent styled */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     max-width: 100%;
 }
+
+/* html content to have at least the height of 100% so the footer sticks to the bottom of the page */
+html{
+    height: 100%;
+}
+
+/* style for body which contains every visible part of the document */
 body{
     background-color: #ffe2e2;
     height: 100%;
@@ -12,11 +24,14 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    position: relative;
+    min-height: 100%;
 }
+
+/* getting rid of all default decorations on the anchor tags */
 a:hover{
     text-decoration: none;
 }
+/* removed the default padding on the bootstrap container fluid class */
 .container-fluid{
     padding: 0;
 }
@@ -27,6 +42,7 @@ a{
     text-decoration: none;
     color: rgb(189, 33, 64);
 }
+/* NAVA - NAVBAR COLLAPSE CONTENT */
 .nava{
     text-align: center;
     z-index: 3;
@@ -34,14 +50,17 @@ a{
     width: 100%;
     align-items: center;
 }
+/* UL AND LI OF THE NAVBAR */
 .navbar-nav .nav-item:hover{
     transform: translateY(5px);
 }
+/* EVERYTHING IN THE NAVIGATION */
 .navbar{
     margin:0;
     font-size: 20px;
     font-family: 'Jaldi', sans-serif;
 }
+/* STYLE SPECIFICS OF THE LINK WITHIN THE NAV-ITEMS */
 ul li .nav-link{
     color: #05060e;
     margin: 0 20px;
@@ -52,10 +71,12 @@ ul li .aa:hover{
     text-decoration: none;
     border-bottom: 4px solid #580404f8;
 }
+/* CHANGING THE COLOR OF ACTIVE PAGES TO MAKE THEM STAND OUT*/
 ul .active .nav-link{
     color: #cf4217;
     text-decoration: none;
 }
+/* MAIN SECTION OF THE INDEX.HTML PAGE CONTAINING A FEW DETAILS */
 .section{
     text-align: center;
     position: absolute;
@@ -63,16 +84,25 @@ ul .active .nav-link{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+/* CONTAINER FOR MY FIRST AND LAST NAMES*/
 #sect{
     display: flex;
 }
+/* FIRST NAME STYLES */ 
 #chy{
     opacity: 0;
     color:rgba(60,60,60,0.9);
     animation: 1.2s ease 0.5s 1 normal forwards running chym;
     text-shadow: 2px 1px 2px rgba(200,20,20,0.9);
 }
-
+/* LAST NAME STYLES */
+#muo{
+    text-shadow: 3px 2px 2px rgba(60,60,60,0.9);
+    opacity: 0;
+    color:rgba(200,20,20,0.9);
+    animation: 1.2s ease 0.5s 1 normal forwards running mons;
+}
+/* FRONT-END DEVELOPER STYLES */
 .deve{
     opacity:0;
     color:rgb(50,50,50);
@@ -81,20 +111,16 @@ ul .active .nav-link{
     font-size: 4.0vw;
     animation: 1s ease 1.5s 1 normal forwards running dever;
 }
-#muo{
-    text-shadow: 3px 2px 2px rgba(60,60,60,0.9);
-    opacity: 0;
-    color:rgba(200,20,20,0.9);
-    animation: 1.2s ease 0.5s 1 normal forwards running mons;
-}
+/* GENERAL STYLE FOR FIRST NAME AND LAST NAME USING A CLASS */
 .h1{
     font-size: 12vw;
     font-family: 'Anton', sans-serif;
     font-weight: 700;
 }
+/* FOOTER OF PAGES/ GENERAL FOOTER STYLES 
+- THE INDEX.HTML PAGE HAS NO FOOTER  */
 .footer{
     background-color: #300202e0;
-    position: absolute;
     bottom: 0px;
     left: 0;
     padding: 5px;
@@ -105,9 +131,12 @@ ul .active .nav-link{
     color: burlywood;
     height: auto;
 }
+/* MAKING THE CONTENTS OF P TAGS SPREAD OUT AND REMAIN IN A BLOCK FORM 
+ALL EDGES REMAIN STRAIGHT  */
 p{
     text-align: justify;
 }
+/* PARAGRAPHS IN THE FOOTER*/
 .footp{
     padding: auto;
     margin: 5px 0;
