@@ -126,6 +126,7 @@ ul .active .nav-link{
     text-align: center;
     color: burlywood;
     height: auto;
+    bottom: 0;
 }
 /* MAKING THE CONTENTS OF P TAGS SPREAD OUT AND REMAIN IN A BLOCK FORM 
 ALL EDGES REMAIN STRAIGHT  */
