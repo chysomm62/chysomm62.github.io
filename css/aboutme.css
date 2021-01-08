@@ -25,15 +25,7 @@ body{
 }
 .aboutp{
     font-size: 2.3vw;
-    animation: 1.2s ease 0.5s 1 normal forwards running cont2;
-}
-@media screen and (max-width: 790px){
-    .aboutp{
-        font-size: 2.5vw;
-    }
-    .worder{
-        margin: 4% 4%;
-    }
+    animation: 1.2s ease 0.5s 1 normal forwards running abt2;
 }
 .abouth1{
     text-align: center;
@@ -48,7 +40,16 @@ body{
     font-size: 4vw;
 }
 .worder{
-    margin: 4% 12%;
+    margin: 4% 14%;
+}
+/* RESPONSIVENESS WITH MEDIA QUERIES */
+@media screen and (max-width: 790px){
+    .aboutp{
+        font-size: 2.5vw;
+    }
+    .worder{
+        margin: 4% 4%;
+    }
 }
 
 /*animations*/
@@ -72,6 +73,16 @@ body{
 @keyframes abouth1{
     0%{
         transform: translateX(-500px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes abt2{
+    0%{
+        transform: translateX(2000px);
         opacity: 0;
     }
     100%{
