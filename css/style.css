@@ -177,14 +177,8 @@ p{
 /* ANIMATIONS */
 @keyframes chym{
     0%{
-        transform: translateX(-200px);
+        transform: translateX(-2000px);
         opacity: 0;
-    }
-    40%{
-        transform: translateY(200px);
-    }
-    80%{
-        transform: translateY(-200px);
     }
     100%{
         transform: translateY(0px);
@@ -193,14 +187,8 @@ p{
 }
 @keyframes mons{
     0%{
-        transform: translateX(280px);
+        transform: translateX(2000px);
         opacity: 0;
-    }
-    40%{
-        transform: translateY(-200px)
-    }
-    80%{
-        transform: translateY(200px)
     }
     100%{
         transform: translateY(0px);

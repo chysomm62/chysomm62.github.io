@@ -15,12 +15,11 @@
 .contactinfo{
     display: flex;
     color: white;
-    width: 80%;
-    padding: 20px;
+    width: 90%;
+    padding: 15px;
     background-color: rgb(100, 26, 29);
     border-radius: 25px;
     margin: 3% auto;
-    padding: 0;
     font-size: large;
     animation: 1.2s ease 0.5s 1 normal forwards running cont3;
     opacity: 0;
