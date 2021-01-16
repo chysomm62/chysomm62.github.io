@@ -119,7 +119,7 @@ ul .active .nav-link{
 - THE INDEX.HTML PAGE HAS NO FOOTER  */
 .footer{
     background-color: #300202e0;
-    padding: 2%;
+    padding: 1%;
     width: 100%;
     margin: auto 0 0 0;
     max-width: 100%;
@@ -136,8 +136,9 @@ p{
 /* PARAGRAPHS IN THE FOOTER*/
 .footp{
     padding: auto;
-    margin: 5px 0;
+    margin: 1% 0;
     text-align: center;
+    font-size: 1.2vw;
 }
 
 /*small and medium sized devices*/
@@ -203,6 +204,9 @@ p{
     }
     #deve{
         font-size: 2.5vw;
+    }
+    .footp{
+        font-size: 2.2vw;
     }
 }
 

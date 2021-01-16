@@ -13,7 +13,7 @@ body{
 }
 .imgcont{
     border-radius: 50%;
-    margin: 5% auto;
+    margin: -3% auto;
     align-items: center;
     justify-content: center;
     width: 40%;
@@ -25,13 +25,13 @@ body{
 }
 .aboutp{
     opacity: 0;
-    font-size: 2.3vw;
+    font-size: 1.5vw;
     animation: 1.2s ease 0.5s 1 normal forwards running abt2;
 }
 .abouth1{
     text-align: center;
     font-weight: bolder;
-    font-size: 5vw;
+    font-size: 3vw;
     font-family: 'Oswald', sans-serif;
     margin:5% auto;
     animation: 1s ease 0.5s 1 normal forwards running abouth1;
@@ -39,20 +39,38 @@ body{
 }
 .h1a{
     opacity: 0;
-    font-size: 4vw;
+    font-size: 1.7vw;
     animation: 1s ease 0.5s 1 normal forwards running abt3;
 }
 .worder{
-    margin: 4% 14%;
+    margin: 2%;
+    width: 50%;
+}
+.flex-direction{
+    display: flex;
 }
 /* RESPONSIVENESS WITH MEDIA QUERIES */
 @media screen and (max-width: 790px){
     .aboutp{
-        font-size: 3vw;
+        font-size: 2.4vw;
+    }
+    .h1a{
+        font-size: 2.5vw;
     }
     .worder{
-        margin: 4% 4%;
-        font-size: 4.5vw;
+        margin: 0;
+        width: 100%;
+        padding: 0 2%;
+    }
+    .flex-direction{
+        display: block;
+    }
+    .imgcont{
+        border-radius: 50%;
+        margin: 3% auto;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
     }
 }
 
