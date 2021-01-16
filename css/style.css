@@ -111,7 +111,7 @@ ul .active .nav-link{
 }
 /* GENERAL STYLE FOR FIRST NAME AND LAST NAME USING A CLASS */
 .h1{
-    font-size: 12vw;
+    font-size: 10vw;
     font-family: 'Anton', sans-serif;
     font-weight: 700;
 }
@@ -200,7 +200,7 @@ p{
         width: 100%;
     }
     .h1{
-        font-size: 9vw;
+        font-size: 12vw;
     }
     #deve{
         font-size: 2.5vw;
